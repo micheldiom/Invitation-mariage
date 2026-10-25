@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jean-Michel &amp; Christina – Invitation de mariage (démonstration)</title>
+<meta name="description" content="Invitation de mariage numérique de démonstration : Jean-Michel Diom et Christina Malmels.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;1,400&family=Cinzel:wght@400;600&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap">
+<link rel="stylesheet" href="style.css"></head><body>
+
+<div id="intro" role="dialog" aria-label="Ouverture de l'invitation">
+<div><div class="stage" id="stage"><div class="env"></div><div class="card"><div><span>Jean-Michel<br>&amp; Christina</span><small id="introDate">UNE INVITATION</small></div></div><div class="flap"></div><button class="wax" id="sealI" aria-label="Ouvrir l'enveloppe"><span class="ini">J&amp;C</span></button></div>
+<h1>Jean-Michel Diom &amp; Christina Malmels</h1><p>Vous êtes cordialement invités à célébrer notre union.</p>
+<button class="btn f" id="openBtn">Ouvrir notre invitation</button><button class="skip" id="skipBtn">Passer l'animation</button></div></div>
+
+<nav aria-label="Navigation"><span>J &amp; C</span><span><a class="l" href="#histoire">Histoire</a><a class="l" href="#galerie">Galerie</a><a class="l" href="#programme">Programme</a><a class="l" href="#lieu">Lieu</a><a href="#rsvp">Répondre</a></span></nav>
+
+<header id="hero"><div><span class="eb" style="color:var(--brume)">Invitation de mariage</span><div class="n">Jean-Michel Diom</div><div class="am">&amp;</div><div class="n">Christina Malmels</div>
+<p style="font:italic 1.2rem var(--bo)" id="quote"></p><div class="sp"></div><b id="dl" style="font:400 1rem var(--ci);letter-spacing:.15em"></b><br><span id="pl"></span><div class="cd" id="cd"></div>
+<p class="note" id="demoNote"></p></div></header>
+
+<section id="histoire"><div class="in"><span class="eb">Notre histoire</span><h2>Notre histoire</h2><p class="c note">Textes de démonstration, à remplacer par votre histoire.</p><div class="tl" id="story"></div></div></section>
+<section id="galerie" class="dk"><div class="in"><span class="eb">Galerie</span><h2>Quelques instants de bonheur</h2><div class="gal" id="gal"></div><p class="c note">Images d'illustration (pas les mariés) : remplacez-les dans CONFIG.photos.</p></div></section>
+<section id="programme"><div class="in"><span class="eb">Programme</span><h2>Le programme de notre journée</h2><ul class="pg" id="pg"></ul><p class="c note">Horaires de démonstration, non définitifs.</p></div></section>
+<section id="lieu" class="dk"><div class="in c"><span class="eb">Lieu</span><h2>Où nous retrouver ?</h2><p><b id="pn"></b><br><span id="pa"></span></p>
+<a class="btn" id="route" target="_blank" rel="noopener">Voir l'itinéraire</a> <button class="btn" id="ics">Ajouter à mon agenda</button><p class="note" id="rn"></p></div></section>
+<section><div class="in"><span class="eb">Code vestimentaire</span><h2>Une touche d'élégance</h2><div class="box"><div class="sw"><i style="background:#08152E"></i><i style="background:#142B50"></i><i style="background:#F8F7F3"></i><i style="background:#C5CBD6"></i></div><p>Nous vous invitons à porter du bleu nuit, du blanc perle ou des touches argentées. Une tenue de cérémonie élégante, pour une journée lumineuse.</p></div></div></section>
+
+<section id="rsvp" style="background:#fff"><div class="in"><span class="eb">Confirmation</span><h2>Votre présence nous ferait immensément plaisir.</h2><p class="c">Merci de nous indiquer si vous pourrez partager cette journée exceptionnelle avec nous.</p>
+<form id="f" novalidate><input id="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px"><label for="civ">Civilité (facultatif)</label><select id="civ"><option value="">—</option><option>Monsieur</option><option>Madame</option><option>Mademoiselle</option></select>
+<label for="nom">Nom et prénom</label><input id="nom" autocomplete="name" required><div class="err" id="e1" role="alert"></div>
+<label for="pr">Votre réponse</label><select id="pr"><option value="oui">Oui, je serai présent(e)</option><option value="non">Je suis désolé(e), je ne pourrai pas être présent(e)</option></select>
+<label for="nb">Nombre de personnes</label><input id="nb" type="number" min="1" max="10" value="1"><label for="rg">Allergies ou régime alimentaire (facultatif)</label><input id="rg"><label for="ms">Message aux mariés (facultatif)</label><textarea id="ms" rows="3"></textarea>
+<p class="note" id="mode"></p><div id="thx" class="c" role="status" style="font:1.3rem var(--bo)"></div>
+<div class="c"><button class="btn f" style="background:var(--nuit);color:var(--perle)" type="submit" id="sub">Confirmer ma réponse</button></div></form></div></section>
+<footer>Site de mariage de démonstration · Jean-Michel Diom &amp; Christina Malmels · Données et visuels d'illustration<br><a id="vit" hidden target="_blank" rel="noopener" style="color:var(--argent)">Découvrir ce service d'invitations numériques →</a></footer>
+
+<dialog id="dlg"><div class="dl" id="dlb"></div></dialog>
+<div id="scene" role="dialog" aria-modal="true" aria-label="Acte de présence"><div class="wrap"><div class="stack" id="stack"><div class="pw" id="pw"><svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="deckle" x="-4%" y="-4%" width="108%" height="108%"><feTurbulence type="fractalNoise" baseFrequency=".035 .05" numOctaves="4" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="14"/></filter></svg>
+<div class="parch" id="parch"><div class="sheet"></div>
+<svg class="orn t" viewBox="0 0 400 50" aria-hidden="true"><g fill="none" stroke="#4a3519" stroke-width="1.7" stroke-linecap="round"><path id="orh" d="M200 25C185 5 160 5 150 20C142 32 156 40 164 32C170 26 162 20 157 24M150 20C130 38 100 40 70 25C55 18 40 20 20 25"/><use href="#orh" transform="translate(400 0) scale(-1 1)"/></g><path d="M200 17l8 8-8 8-8-8z" fill="#4a3519"/></svg>
+<svg class="orn b" viewBox="0 0 400 50" aria-hidden="true"><g fill="none" stroke="#4a3519" stroke-width="1.7" stroke-linecap="round"><use href="#orh"/><use href="#orh" transform="translate(400 0) scale(-1 1)"/></g><path d="M200 17l8 8-8 8-8-8z" fill="#4a3519"/></svg>
+<svg id="quill" viewBox="0 0 100 260" aria-hidden="true"><defs><linearGradient id="qg" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#f6edd8"/><stop offset=".5" stop-color="#c9a36a"/><stop offset="1" stop-color="#5e4122"/></linearGradient><clipPath id="vc"><path d="M5 252C0 150 30 40 96 3C98 70 80 150 5 252Z"/></clipPath></defs>
+<path d="M5 252C0 150 30 40 96 3C98 70 80 150 5 252Z" fill="url(#qg)" stroke="#3a2812" stroke-width="1.2"/><path id="barbs" clip-path="url(#vc)" stroke="#4a3216" stroke-width=".7" opacity=".6" fill="none"/>
+<path d="M40 70l9 6-4 12z" fill="#08152E" opacity=".12"/><path d="M5 252C40 160 70 80 95 5" stroke="#2a1d10" stroke-width="3.2" fill="none" stroke-linecap="round"/><path d="M3 247L5 257L8 246Z" fill="#0a2466"/><circle cx="5" cy="257" r="2.2" fill="#1a3fa0"/></svg><div id="txt"></div></div></div><div class="wax" id="wax"><span class="ini">J&amp;C</span></div></div>
+<div id="fin"><p>Votre présence est désormais inscrite dans notre histoire.</p><button class="btn" id="b3" hidden>Télécharger mon acte de présence</button><button class="btn" id="b2">Retour à l'invitation</button></div></div></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" async></script>
+<script src="config.js"></script>
+<script src="script.js"></script></body></html>
